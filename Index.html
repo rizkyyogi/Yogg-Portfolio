@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yogg Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css">
+    <style>
+
+      .video-container {
+        position: relative;
+        padding-top: 100%; /* Membuat kontainer menjadi persegi (1:1) */
+        overflow: hidden; /* Menyembunyikan bagian video yang melampaui kontainer */
+      }
+
+      .cropped-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: 100%;
+      }
+      /* Keyframes for fade-in animation */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+  
+      /* Apply fade-in animation to all elements */
+      .fade-in {
+        opacity: 0; /* Initial state */
+        animation: fadeIn 1s ease-in forwards; /* Animation settings */
+      }
+  
+      /* Delay the animation if needed */
+      .fade-in-delay {
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+        animation-delay: 0.5s; /* Delay start by 0.5 second */
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);}
+    </style>
+  </head>
+  
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <img src="./Asset/Ellipse 1.png" style="width: 20px;margin-left: 15px;">
+        <a class="navbar-brand" href="#">Yogg</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Works
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#design">Design</a></li>
+                <li><a class="dropdown-item" href="#vd">Video</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#web">Website</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- about me -->
+    <section id="me">
+      <div class="container py-3">
+        <div class="row" style="padding-bottom: 90px;">
+          <div class="col-md-6 fade-in">
+            <img class="img-fluid" src="./Asset/Group 11.png" alt="Personal Photo" />
+          </div>
+          <div class="col-md-6 align-self-center fade-in-delay">
+            <h1 style="font-family: coolvetica;">Hello!<br>I'm Yogi.</h1>
+            <p>
+              A graphic designer specializing in branding, illustration, and print
+            design.<br />
+            I enjoy transforming ideas into visually appealing and meaningful
+            creations.<br />
+            Currently, I am learning web development to combine my design skills
+            with technology, creating more interactive user experiences.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="https://web.facebook.com/rizky.y.saputra.56863"><img src="ssmd/facebook.png" style="width: 30px;"></a>
+              <a href="https://github.com/rizkyyogi"><img src="ssmd/github.png" style="width: 30px;"></a>
+              <a href="https://www.instagram.com/rzk._.y/"><img src="ssmd/instagram.png" style="width: 30px;"></a>
+              <a href="https://www.linkedin.com/in/rizky-yogi-80510b24b/"><img src="ssmd/linkedin.png" style="width: 30px;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-example-divider"></div>
+    </section>
+    <div id="resume" class="container mt-5">
+
+      <!-- Header resummer -->
+      <div class="row fade-in">
+        <div class="col-12 text-center" style="padding-top: 20px">
+          <h1 style="font-size: 70px;color: #632f94;">Resume</h1>
+          <hr> 
+          <h3>Rizky Yogi Saputra</h3>
+          <p>
+            Depok,West Java | rizkyyogi00@gmail.com |
+            https://www.linkedin.com/in/rizky-yogi-80510b24b
+          </p>
+        </div>
+      </div>
+      <!-- End of header resume -->
+    <div class="row mt-4 fade-in">
+      <div class="col-sm-6">
+        <h2 style="color: #ea3546">Experiences</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row fade-in">
+      <div class="col-sm-6">
+        <h4>Graphic Design Freelance</h4>
+
+        <p><small>2020 - Now</small></p>
+        <ul>
+          <li>
+            Worked closely with clients to understand their design needs,
+            preferences, and objectives, ensuring the final product aligns
+            with their vision.
+          </li>
+          <li>
+            Designed marketing materials such as banners, email templates, and
+            social media posts to enhance online presence and engagement.
+          </li>
+          <li>
+            Incorporated client feedback and revisions promptly to ensure
+            client satisfaction and project success.
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h4>Graphic Design Internship<h4>
+        <h5>PT. Cyberindo Filma NET</h5>
+        <p><small>January 2021 - March 2021</small></p>
+        <ul>
+          <li>Contributed to the Development of Graphic Design Training Competencies</li>
+          <li>Gain understanding and practice in typography principles by assisting 
+            in the selection and pairing of fonts for various design projects.</li>
+          <li>Creating promotional and marketing materials such as brochures, 
+            leaflets, posters, and social media content, utilizing design 
+            software such as Adobe Photoshop, Illustrator, and CorelDraw.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mt-4 fade-in">
+      <div class="col-sm-6">
+        <h2 style="color: #ea3546;">Education</h2><hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>Undergraduate</h4>
+          <h5>Pamulang University</h5>
+          <p><small>2022-2026</small></p>
+          <p>informatics engineering major</p>
+        </div>
+        <div class="col-sm-6">
+          <h4>Graduate</h4>
+          <h5>Taruna Terpadu 1 Highschool</h5>
+          <p><small>2019-2021</small></p>
+          <p>Multimedia Major</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 fade-in" style="padding-bottom: 130px;">
+      <div class="col-sm-6">
+        <h2 style="color: #ea3546;">Skills</h2><hr>
+      </div>
+      <div class="row" style="padding-top: 20px;">
+        <img src="./icon/photoshop.png" style="width: 75px">
+        <img src="./icon/illustrator.png" style="width: 75px;margin-left: 20px;">
+        <img src="./icon/Corel.png" style="width: 75px;margin-left: 20px;">
+      </div>
+      <div class="row" style="padding-top: 20px;">
+        <img src="./icon/premiere-pro.png" style="width: 75px;margin-left: 20px;">
+        <img src="./icon/after-effects.png" style="width: 75px;margin-left: 20px;">
+        <img src="./icon/download.jpeg" style="width: 75px;margin-left: 20px;">
+        <img src="./icon/downloa.jpeg" style="width: 75px;margin-left: 20px;">
+
+      </div>
+    </div>
+  </div>
+  <div class="b-example-divider"></div>
+  <!-- end of section 2 -->
+    <!-- Porto -->
+    <!-- design -->
+    <div id="design" class="container my-5 fade-in">
+      <h1 class="text-center mb-5" style="font-size: 70px;color: #632f94;">Works</h1>
+      <h4 style="color: #ea3546;">Design</h4><hr>
+     
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Portfolio Item 1 -->
+        <div class="col-sm-4">
+          <div class="portfolio-item">
+            <img src="img/Pster/susheeee.png" class="img-fluid" alt="Desain 1" >
+          </div>
+        </div>
+        <!-- Portfolio Item 2 -->
+        <div class="col-sm-4">
+          <div class="portfolio-item">
+            <img src="img/Pster/Untitle222.png" class="img-fluid" alt="Desain 2" >
+          </div>
+        </div>
+        <!-- Portfolio Item 3 -->
+        <div class="col-sm-4">
+          <div class="portfolio-item">
+            <img src="img/Pster/Untitled-1 (1).png" class="img-fluid" alt="Desain 3" >
+          </div>
+        </div>
+        <!-- Portfolio Item 4 -->
+        <div class="col-sm-4">
+          <div class="portfolio-item">
+            <img src="img/Pster/Untitled-1.png" class="img-fluid" alt="Desain 4" >
+          </div>
+        </div>
+        <!-- Portfolio Item 5 -->
+        <div class="col-sm-4">
+          <div class="portfolio-item">
+            <img src="img/Pster/Untitled-2221.png" class="img-fluid" alt="Desain 5" >
+          </div>
+        </div>
+        <!-- Portfolio Item 6 -->
+        <div class="col-sm-4">
+          <div class="portfolio-item">
+            <img src="img/Pster/Untitled-331.jpg" class="img-fluid" alt="Desain 6" >
+          </div>
+        </div>
+        <!-- Portfolio Item 7 -->
+        <div class="col-sm-6" style="width: 100%;">
+          <div class="portfolio-item-baju">
+            <img src="img/man-wearing-blank-shirt.png" class="img-fluid" alt="Desain 7" >
+          </div>
+        </div>
+        <!-- Portfolio Item 8 -->
+        <div class="col-sm-6" style="width: 100%;">
+          <div class="portfolio-item-baju">
+            <img src="img/set-black-hoodies-front-back.png" class="img-fluid" alt="Desain 7" >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of pdesign -->
+
+<!-- video -->
+<div id="design" class="container my-5 fade-in">
+  <h4 style="color: #ea3546;">Video</h4><hr>
+ 
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <!-- Portfolio Item 1 -->
+    <div class="col-sm-4">
+      <div class="portfolio-item">
+        <video src="./vd/1.mp4" class="img-fluid" autoplay loop muted alt="Video 1" ></video>
+      </div>
+    </div>
+    <!-- Portfolio Item 2 -->
+    <div class="col-sm-4">
+      <div class="portfolio-item">
+        <video src="./vd/2.mp4" class="img-fluid" autoplay loop muted alt="Video 2" ></video>
+      </div>
+    </div>
+    <!-- Portfolio Item 3 -->
+    <div class="col-sm-4">
+      <div class="portfolio-item">
+        <video src="./vd/3.mp4" class="img-fluid" autoplay loop muted alt="Video 3" ></video>
+      </div>
+    </div>
+    <!-- Portfolio Item 4 -->
+    <div class="col-sm-4">
+      <div class="portfolio-item">
+        <video src="./vd/8.mp4" class="img-fluid" autoplay loop muted alt="Video 4" ></video>
+      </div>
+    </div>
+    <!-- Portfolio Item 5 -->
+    <div class="col-sm-4">
+      <div class="portfolio-item">
+        <video src="./vd/5.mp4" class="img-fluid" autoplay loop muted alt="Video 5" ></video>
+      </div>
+    </div>
+    <!-- Portfolio Item 6 -->
+    <div class="col-sm-4">
+      <div class="portfolio-item">
+        <video src="./vd/6.mp4" class="img-fluid" autoplay loop muted alt="Video 6" ></video>
+      </div>
+    </div>
+    <!-- Portfolio Item 7 -->
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col" style="display: flex;justify-content: center;" >
+      <div class="portfolio-item-baju" style="display: flexbox;align-items: center;justify-content: center;">
+        <video src="./vd/7.mp4" class="img-fluid" style="width: 356px;" autoplay loop muted alt="Video 7" ></video>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of Video -->
+
+ 
+      <!-- web -->
+      <div id="web" class="container fade-in" style="padding-top: 60px;">
+        <div class="row">
+          <h4 style="color: #ea3546;">Web</h4><hr>
+          <div style="text-align: center;">
+          <img src="662b21d555950e4333f638f9_036.png" style="width: 40%;">
+          <h1><b>Noting To See There...</b></h1>
+          </div>
+      <!-- end of web -->
+    </div>
+      <!-- end of web -->
+      <!-- footer -->
+      <footer class="footer text-center text-lg-start" style="padding-top: 20%;">
+        <div class="container-fluid p-4 fade-in">
+          <div class="row">
+            <!-- About Me Column -->
+            <div class="col-lg-6 col-md-6 col-sm-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">About Me</h5>
+              <p>
+                Hi, I'm Yogi, A graphic designer specializing in branding, illustration, and print
+                design. I enjoy transforming ideas into visually appealing and meaningful
+                creations. Currently, I am learning web development to combine my design skills
+                with technology, creating more interactive user experiences.
+              </p>
+            </div>
+    
+            <!-- Contact Column -->
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Contact</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-envelope mr-3"></i> rizkyyogi00@gmail.com</li>
+                <li><i class="fas fa-phone mr-3"></i> +62 895-2811-3887</li>
+              </ul>
+              <!-- Social Icons -->
+              <div class="social-icons mt-3">
+                <a href="https://web.facebook.com/rizky.y.saputra.56863"><img src="ssmd/facebook.png" style="width: 30px;"></a>
+                <a href="https://github.com/rizkyyogi"><img src="ssmd/github.png" style="width: 30px;"></a>
+                <a href="https://www.instagram.com/rzk._.y/"><img src="ssmd/instagram.png" style="width: 30px;"></a>
+                <a href="https://www.linkedin.com/in/rizky-yogi-80510b24b/"><img src="ssmd/linkedin.png" style="width: 30px;"></a>
+              </div>
+            </div>
+          </div><hr>
+          <div>
+          <p style="color: rgb(0, 0, 0);">© 2024 Rizky Yogi Saputra. All rights reserved.</p>
+        </div>
+        </div>
+        
+      </footer>
+    
+
+  
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

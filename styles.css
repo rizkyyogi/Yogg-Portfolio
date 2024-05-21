@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Coolvetica;
+  src: url(coolvetica rg.otf);
+}
+
+.mid {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;"
+}
